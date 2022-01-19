@@ -329,7 +329,7 @@ button, input[type="button"], input[type="submit"] {
 .btn-primary:hover,
 .btn-primary:focus,
 button, input[type="button"], input[type="submit"] {
-  background-color: #AA00FF;
+  background-color: #777777;
   color: #fff;
   border: 0;
   box-shadow: 0 1px 1px rgba(0,0,0,0.1), 0 2px 4px rgba(0,0,0,0.3);
@@ -354,11 +354,11 @@ button:hover, input[type="button"]:hover, input[type="submit"]:hover {
 /* / buttons */
 
 .border-top {
-  border-top: 2px solid #AA00FF;
+  border-top: 2px solid #777777;
 }
 
 .border-bottom {
-  border-bottom: 2px solid #AA00FF;
+  border-bottom: 2px solid #777777;
 }
 
 /* Footer */
@@ -1250,7 +1250,7 @@ body > footer .copyrights {
   font-weight: 400;
   display: block;
   margin: 10px 0;
-  color: #AA00FF;
+  color: #000000;
 }
 /* /Fun Facts */
 
@@ -1459,7 +1459,7 @@ body > footer .copyrights {
 
 .portfolio-filters li.active a,
 .portfolio-filters li.active a:hover {
-  background-color: #AA00FF;
+  background-color: #111111;
   color: #fff;
 }
 
@@ -1503,13 +1503,13 @@ body > footer .copyrights {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #AA00FF;
+  background-color: #777777;
   opacity: 0.8;
   z-index: 0;
 }
 
 .portfolio-grid figure:nth-child(even) a div:before {
-  background-color: #9e51f3;
+  background-color: #777777;
 }
 
 .portfolio-grid figure a:hover div {
@@ -1629,7 +1629,7 @@ body > footer .copyrights {
 
 .blog-card .post-date span {
   display: block;
-  color: #AA00FF;
+  color: #777777;
   line-height: 1;
   font-size: 12px;
   margin: 0;
@@ -1770,7 +1770,7 @@ body > footer .copyrights {
 .contact-info-block i {
   position: relative;
   font-size: 18px;
-  color: #AA00FF;
+  color: #000000;
   text-align: center;
   line-height: 36px;
 }
@@ -1992,7 +1992,7 @@ body > footer .copyrights {
 }
 
 .ajax-page-nav > div.nav-item a:hover {
-  color: #AA00FF;
+  color: #777777;
 }
 
 .ajax-page-nav > div.nav-item a i {
@@ -2037,7 +2037,7 @@ body > footer .copyrights {
 }
 
 .project-general-info .fa {
-  color: #AA00FF;
+  color: #000000;
   margin-right: 5px;
 }
 
