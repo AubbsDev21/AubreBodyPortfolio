@@ -9,9 +9,17 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+     
+      - name: Run Super-Linter
+        uses: github/super-linter@v3
+        env:
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
+          
+      - name: Install rsync
+        run: |
+           apt-get update && apt-get install -y rsync
+          
+      - name: Deploy to Github Pages
+        uses: AubbsDev21/AubreBodyPortfolio@v4.2.5
         
-        - name: Run Super-Linter
-          uses: github/super-linter@v3
-          env:
-            DEFAULT_BRANCH: main
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
