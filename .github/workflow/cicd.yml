@@ -1,0 +1,20 @@
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-20.04]
+      env:
+        prepo: ${{ github.repository }}
+      steps:
+      - uses: actions/checkout@v2
+      - name: Set up Minify action
+        uses: amireshoon/minifyAction@main
+        with:
+          repo: $prepo
+      - name: Minifying Soucre Code
+        run: |
+          minifier.sh $prepo
+      - name: Pushing to 
