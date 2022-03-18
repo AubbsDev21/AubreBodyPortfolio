@@ -17,4 +17,13 @@ jobs:
       - name: Minifying Soucre Code
         run: |
           minifier.sh $prepo
-      - name: Pushing to 
+      - name: Pushing to the production bracnh
+        uses: actions-js/push@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          directory: github/workspace
+          branch: production
+          message: Minified Profolio Website HTML, CSS, JS
+          author_name: MinifyAction[bot]
+          author_email: amireshoon-minifyAction@sers.noreply.github.com
+          force: true
