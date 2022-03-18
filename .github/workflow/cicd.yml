@@ -1,7 +1,4 @@
-on:
-    push:
-      branches:
-        - stage
+
 jobs:
   test:
     runs-on: ${{ matrix.os }}
@@ -21,13 +18,10 @@ jobs:
       - name: Minifying Soucre Code
         run: |
           minifier.sh $prepo
-  
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-    - run: |
-        git push
+      - name: Pushing to the stage branch
+        uses: actions-js/push@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          directory: github/workspace
+          branch: stage 
  
