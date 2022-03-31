@@ -1,4 +1,4 @@
-name: Website cicd
+name: Website ci/cd
 on: 
   push:
     branchs: [main]
