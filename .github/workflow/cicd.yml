@@ -1,4 +1,9 @@
-
+name: Website cicd
+on: 
+  push:
+    branchs: [main]
+  pull_reqeust:
+    branchs: [main]
 jobs:
   test:
     runs-on: ${{ matrix.os }}
